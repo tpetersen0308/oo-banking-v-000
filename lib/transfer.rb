@@ -20,7 +20,7 @@ class Transfer
   end
 
   def reverse_transfer
-    self.new(self.receiver, self.sender, self.amount)
+    Transfer.new(self.receiver, self.sender, self.amount)
     self.execute_transcation
   end
 
