@@ -6,7 +6,8 @@ class Transfer
   end
 
   def valid?
-    self.sender.valid? && self.sender.balance >= self.amount && self.receiver.valid? && self.status == "pending" ? true : false
+    self.sender.valid? && self.sender.balance >= self.amount && 
+    self.receiver.valid? && self.status == "pending" ? true : false
   end
 
   def execute_transaction
