@@ -21,7 +21,7 @@ class Transfer
 
   def reverse_transfer
     to_reverse = Transfer.new(self.receiver, self.sender, self.amount)
-    to_reverse.execute_transcation
+    to_reverse.execute_transaction
   end
 
 end
