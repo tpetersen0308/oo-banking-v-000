@@ -1,5 +1,6 @@
 class BankAccount
-  attr_accessor :name, :status, :balance
+  attr_accessor :status, :balance
+  attr_reader :name
 
   def initialize(name)
     @name = name
@@ -12,6 +13,7 @@ class BankAccount
   end
 
   def display_balance
+    "Your balance is #{self.balance}."
   end
 
   def valid?
